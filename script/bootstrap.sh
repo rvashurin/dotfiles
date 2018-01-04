@@ -26,6 +26,7 @@ if [[ $response == "no" ]]; then
 fi
 
 useradd $USERNAME
+usermod $USERNAME -aG sudo
 su $USERNAME -
 
 install_yaourt

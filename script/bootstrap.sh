@@ -2,18 +2,6 @@
 
 set -e
 
-install_yaourt() {
-  git clone https://aur.archlinux.org/package-query.git
-  cd package-query
-  makepkg -si
-  cd ..
-  git clone https://aur.archlinux.org/yaourt.git
-  cd yaourt
-  makepkg -si
-  cd ..
-  rm -rf package-query yaourt
-}
-
 USERNAME=$1
 USERPW=$2
 DOTDIR=$(pwd -P)
@@ -27,7 +15,7 @@ fi
 
 useradd $USERNAME
 usermod $USERNAME -aG sudo
-cd ~$USERNAME
+cd /home/$USERNAME 
 
 su $USERNAME -c <<HEREDOC
   git clone https://aur.archlinux.org/package-query.git

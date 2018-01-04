@@ -27,6 +27,7 @@ fi
 
 useradd $USERNAME
 usermod $USERNAME -aG sudo
+cd ~$USERNAME
 
 su $USERNAME -c <<HEREDOC
   git clone https://aur.archlinux.org/package-query.git

@@ -27,9 +27,7 @@ fi
 
 useradd $USERNAME
 usermod $USERNAME -aG sudo
-su $USERNAME -
 
-install_yaourt
-
-sudo pacman -S - < "$DOTDIR/packages/pacman_pkglist.txt"
-yaourt -S - < "$DOTDIR/packages/aur_pkglist.txt" 
+su $USERNAME -c install_yaourt
+su $USERNAME -c 'sudo pacman -S - < "$DOTDIR/packages/pacman_pkglist.txt"'
+su $USERNAME -C 'yaourt -S - < "$DOTDIR/packages/aur_pkglist.txt" '

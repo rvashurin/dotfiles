@@ -1,0 +1,12 @@
+autorandr-git
+davmail
+fingerprint-gui
+glxinfo
+google-chrome
+polybar
+python-epub
+python2-epub
+sublime-text-dev
+telegram-desktop-bin
+yaourt
+yousician

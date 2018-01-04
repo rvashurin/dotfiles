@@ -8,12 +8,12 @@ sudo pacman -S --noconfirm binutils git gcc
 
 git clone https://aur.archlinux.org/package-query.git
 cd package-query
-makepkg -si
+makepkg -si --noconfirm
 cd ..
 
 git clone https://aur.archlinux.org/yaourt.git
 cd yaourt
-makepkg -si
+makepkg -si --noconfirm
 cd ..
 
 rm -rf package-query yaourt

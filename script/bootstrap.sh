@@ -2,32 +2,21 @@
 
 set -e
 
-USERNAME=$1
-USERPW=$2
 DOTDIR=$(pwd -P)
 
-echo "Please make sure that members of sudo group are able to execute sudo commands without password! Do you wish to proceed with installation?"
-read response
-if [[ $response == "no" ]]; then
-  echo "Aborting"
-  exit 0
-fi
+sudo pacman -S --noconfirm binutils git 
 
-useradd -m $USERNAME
-usermod $USERNAME -aG sudo
-cd /home/$USERNAME 
+git clone https://aur.archlinux.org/package-query.git
+cd package-query
+makepkg -si
+cd ..
 
-su $USERNAME <<HEREDOC
-  git clone https://aur.archlinux.org/package-query.git
-  cd package-query
-  makepkg -si
-  cd ..
-  git clone https://aur.archlinux.org/yaourt.git
-  cd yaourt
-  makepkg -si
-  cd ..
-  rm -rf package-query yaourt
+git clone https://aur.archlinux.org/yaourt.git
+cd yaourt
+makepkg -si
+cd ..
 
-  sudo pacman -S - < "$DOTDIR/packages/pacman_pkglist.txt";
-  yaourt -S - < "$DOTDIR/packages/aur_pkglist.txt";
-HEREDOC
+rm -rf package-query yaourt
+
+sudo pacman -S --noconfirm - < "$DOTDIR/packages/pacman_pkglist.txt";
+yaourt -S --noconfirm - < "$DOTDIR/packages/aur_pkglist.txt";

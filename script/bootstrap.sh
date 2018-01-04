@@ -19,7 +19,8 @@ USERPW=$2
 DOTDIR=$(pwd -P)
 
 echo "Please make sure that members of sudo group are able to execute sudo commands without password! Do you wish to proceed with installation?"
-if [[ read == "no" ]]; then
+read response
+if [[ $response == "no" ]]; then
   echo "Aborting"
   exit 0
 fi

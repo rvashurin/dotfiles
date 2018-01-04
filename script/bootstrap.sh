@@ -13,7 +13,7 @@ if [[ $response == "no" ]]; then
   exit 0
 fi
 
-useradd $USERNAME
+useradd -m $USERNAME
 usermod $USERNAME -aG sudo
 cd /home/$USERNAME 
 

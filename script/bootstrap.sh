@@ -1,8 +1,6 @@
 #!/bin/bash
 
-install_software() {
-
-}
+set -e
 
 install_yaourt() {
   git clone https://aur.archlinux.org/package-query.git

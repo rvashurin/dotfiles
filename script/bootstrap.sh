@@ -17,7 +17,7 @@ useradd -m $USERNAME
 usermod $USERNAME -aG sudo
 cd /home/$USERNAME 
 
-su $USERNAME -c <<HEREDOC
+su $USERNAME <<HEREDOC
   git clone https://aur.archlinux.org/package-query.git
   cd package-query
   makepkg -si

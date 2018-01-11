@@ -19,7 +19,7 @@ cd ..
 
 git clone https://aur.archlinux.org/st.git
 cd st
-rm config.sh
+rm config.h
 ln -s $DOTDIR/term/config.h config.h
 updpkgsums
 makepkg -si --noconfirm

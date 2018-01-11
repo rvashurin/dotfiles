@@ -27,5 +27,5 @@ cd ..
 
 rm -rf package-query yaourt st
 
-sudo pacman -S --noconfirm - < "$DOTDIR/packages/pacman_pkglist.txt";
-yaourt -S --noconfirm - < "$DOTDIR/packages/aur_pkglist.txt";
+sudo pacman -S --noconfirm "$DOTDIR/packages/pacman_pkglist.txt";
+yaourt -S --noconfirm "$DOTDIR/packages/aur_pkglist.txt";

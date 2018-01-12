@@ -2,12 +2,14 @@
 
 DIR=$1
 
+cd $DIR
 git clone https://aur.archlinux.org/st.git
-cd $DIR/st
+cd st
+
 ln -sf ../config.h config.h
 updpkgsums
 makepkg -si --noconfirm
-cd ..
 
+cd ..
 rm -rf st
 

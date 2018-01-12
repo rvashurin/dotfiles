@@ -4,7 +4,7 @@ set -e
 
 DOTDIR=$(pwd -P)
 
-sudo pacman -S --noconfirm git binutils base-devel
+sudo pacman -S --noconfirm git base-devel
 
 git clone https://aur.archlinux.org/package-query.git
 cd package-query

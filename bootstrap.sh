@@ -24,6 +24,6 @@ rm -rf package-query yaourt
 sudo pacman -S --noconfirm - < "$DOTDIR/packages/pacman_pkglist.txt";
 yaourt -S --noconfirm "$DOTDIR/packages/aur_pkglist.txt";
 
-for dir in $(ls -d $DOTDIR/config/*/) do
-  source $DOTDIR/config/$dir/install.sh
+for dir in $(ls -d $DOTDIR/config/*/); do
+  source $dir/install.sh $dir
 done

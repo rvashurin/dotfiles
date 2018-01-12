@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR=dirname "$(readlink -f "$0")"
+DIR=$1
 
 git clone https://aur.archlinux.org/st.git
 cd $DIR/st

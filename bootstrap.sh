@@ -4,6 +4,8 @@ set -e
 
 DOTDIR=$(pwd -P)
 
+sudo pacman -Syy
+
 sudo pacman -S --noconfirm reflector
 sudo reflector --latest 100 --sort rate --save /etc/pacman.d/mirrorlist
 

@@ -5,7 +5,7 @@ set -e
 DOTDIR=$(pwd -P)
 
 sudo pacman -S --noconfirm reflector
-sudo reflector --last 100 --sort rate --save /etc/pacman.d/mirrorlist
+sudo reflector --latest 100 --sort rate --save /etc/pacman.d/mirrorlist
 
 sudo pacman -S --noconfirm git base-devel
 

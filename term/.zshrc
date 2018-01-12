@@ -1,0 +1,46 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.zshhistory
+HISTSIZE=5000
+SAVEHIST=100000
+bindkey -v
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/mhi/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+# Path to your oh-my-zsh installation.
+export ZSH=$HOME/.oh-my-zsh
+
+ZSH_THEME="powerlevel9k/powerlevel9k"
+
+plugins=(archlinux
+         git
+	 colored-man-pages
+	 bundler
+	 rails
+	 rvm)
+
+source $ZSH/oh-my-zsh.sh
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs time)
+
+for key in ${(k)icons[@]}
+do
+    if [[ $key =~ 'BACKGROUND' || $key =~ 'OK_ICON' ]]
+    then
+        icons[$key]=" ${icons[$key]} "
+    fi
+done
+
+export EDITOR=nvim
+alias ll="ls -alF"
+alias iconn="openconnect ra.interfax.ru -g INTERFAX -u vashurin"
+alias vim=nvim
+alias mutt=neomutt
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

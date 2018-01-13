@@ -12,5 +12,5 @@ done
 
 shopt -u dotglob
 
-ls -sf /usr/share/zsh-theme-powerlevel9k/powerleve9k.zsh-theme /usr/share/oh-my-zsh/themes/powerlevel9k.zsh-theme 
+ls -sf /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme /usr/share/oh-my-zsh/themes/powerlevel9k.zsh-theme 
 

@@ -35,3 +35,5 @@ prepare_wallpaper() {
 prepare_wallpaper
 
 ln -sf $DIR/.wallpaper.png ~/.wallpaper.png
+sudo cp $DIR/change_wallpaper /usr/bin
+

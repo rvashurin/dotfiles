@@ -1,0 +1,7 @@
+#!/bin/bash
+
+PATH=$1
+DOTFILES_DIR=$2
+
+cp $PATH $DOTFILES_DIR/config/X/.wallpaper.png
+sudo cp $PATH /usd/share/sddm/themes/abstractdark-sddm-theme/background.png

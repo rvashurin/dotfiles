@@ -12,3 +12,8 @@ done
 shopt -u dotglob
 
 sudo ln -sf $DIR/i3lock_wallpaper.sh /usr/bin/i3lock_wallpaper
+
+sed "s/<USERNAME>/$(whoami)/" $DIR/suspend.service.skel > $DIR/suspend.service
+sudo mv $DIR/suspend.service /etc/systemd/system/
+sudo systemctl enable suspend.service
+

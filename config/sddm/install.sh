@@ -7,3 +7,4 @@ cd /usr/share/sddm/themes
 sudo rm -rf abstractdark-sddm-theme
 sudo git clone https://github.com/3ximus/abstractdark-sddm-theme.git
 sudo cp $DIR/../X/.wallpaper.png /usr/share/sddm/themes/abstractdark-sddm-theme/background.png
+sudo systemctl enable sddm.service

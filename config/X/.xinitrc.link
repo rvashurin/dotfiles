@@ -51,4 +51,3 @@ fi
 sh /home/mhi/.fehbg
 setxkbmap -model thinkpad60 -layout gb,ru -option grp:alt_shift_toggle -option ctrl:nocaps
 xbindkeys
-exec i3

@@ -90,3 +90,5 @@ xorg-xwud
 zip
 zsh
 zsh-theme-powerlevel9k
+sddm
+i3lock

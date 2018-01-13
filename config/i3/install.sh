@@ -11,4 +11,4 @@ done
 
 shopt -u dotglob
 
-
+sudo ln -sf $DIR/i3lock_wallpaper.sh /usr/bin/i3lock_wallpaper

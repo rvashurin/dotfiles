@@ -78,7 +78,7 @@
   XF86AudioMute
 
 # Lock session
-"/usr/bin/slimlock"
+"i3lock -i $HOME/.wallpaper.png"
   XF86ScreenSaver
 ##################################
 # End of xbindkeys configuration #

@@ -8,3 +8,4 @@ siji-git
 telegram-desktop-bin
 ttf-font-awesome-4
 ttf-unifont
+xinit-xsession

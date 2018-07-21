@@ -125,7 +125,7 @@ bindsym $mod+Shift+0 move container to workspace 10
 assign [class="chromium"] 1
 assign [class="st" instance="term"] 2
 assign [class="st" instance="vim"] 3
-assign [class="st" instance="music"] 7
+assign [class="Spotify"] 7
 assign [class="Mysql-workbench-bin"] 4
 assign [class="st" instance="midnight"] 5
 assign [class="st" instance="mutt"] 6
@@ -170,7 +170,7 @@ exec davmail
 exec optirun chromium
 exec st -n term
 exec st -n vim -e zsh -c 'nvim;zsh'
-exec st -n music -e zsh -c 'ncmpcpp;zsh'
+exec spotify 
 exec mysql-workbench
 exec st -n midnight -e zsh -c 'mc -b;zsh'
 exec getmail

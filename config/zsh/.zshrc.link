@@ -2,6 +2,8 @@
 HISTFILE=~/.zshhistory
 HISTSIZE=5000
 SAVEHIST=100000
+export TERM="xterm-256color"
+
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
@@ -38,9 +40,12 @@ done
 
 export EDITOR=nvim
 alias ll="ls -alF"
-alias iconn="openconnect ra.interfax.ru -g INTERFAX -u vashurin"
+alias iconn="sudo openconnect ra.interfax.ru -g INTERFAX -u vashurin"
 alias vim=nvim
 alias mutt=neomutt
+
+nplayer () (nc -kluw 1 127.0.0.1 5555 > /tmp/mpd.fifo & trap "kill $!" EXIT; ncmpcpp)
+
 
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

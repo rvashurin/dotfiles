@@ -176,3 +176,4 @@ exec st -n midnight -e zsh -c 'mc -b;zsh'
 exec getmail
 exec st -n mutt -e zsh -c 'mutt;zsh'
 exec telegram-desktop
+exec dropbox

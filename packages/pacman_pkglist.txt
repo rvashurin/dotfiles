@@ -1,39 +1,61 @@
 acpid
 alsa-utils
+anki
 bbswitch
 bdf-unifont
-calibre
-cronie
-dialog
+bluez-utils // bluetooth stuff
+bumblebee // integrated+dedicated graphics switcher
+calibre // Ebook library and reader
+cronie // cron implementation
 dmenu
-efibootmgr
+docker-compose
 feh
+firefox
 git
 grub
 htop
 i3-gaps
-intel-ucode
-mlocate
+i3lock
+intel-ucode // microcode updates, whatever that is
+iputils // ping
+libreoffice-fresh
+logrotate
+man-pages
+mesa-demos // glxgears, fire, stuff to check if graphics card is working
+mlocate // locate
+mysql-workbench
+ncmpcpp // music player
 neovim
-openconnect
+netctl
+nodejs
+ntp // Network time protocol
+openbsd-netcat // TCPIP swiss army knife
+openconnect // VPN client
 openssh
-pamixer
-pass
+p7zip
+pamixer // Command-line pulseaudio control
+pass // GPG-encrypted password vault
+pavucontrol // GUI pulseaudio control panel
 pulseaudio
-python-tldextract
+pulseaudio-bluetooth  // bluetooth integration for pulse
 qutebrowser
-slim
+ranger // file manager
+sddm // Display manager
+slim // Login manager
 slim-themes
 tmux
 ttf-arphic-uming
 ttf-baekmuk
 ttf-dejavu
 ttf-freefont
+unzip
+vlc
 wget
 wireless_tools
+wpa_actiond
 wpa_supplicant
-xbindkeys
-xclip
+xbindkeys // 	Launch shell commands with your keyboard or your mouse under X
+xclip  // Command line interface to X11 clipboard
 xf86-video-intel
 xf86-video-vesa
 xorg-bdftopcf
@@ -90,6 +112,3 @@ xorg-xwud
 zip
 zsh
 zsh-theme-powerlevel9k
-sddm
-i3lock
-wpa_actiond

@@ -33,6 +33,7 @@ openbsd-netcat // TCPIP swiss army knife
 openconnect // VPN client
 openssh
 p7zip
+pacman-contrib // updpkgsums
 pamixer // Command-line pulseaudio control
 pass // GPG-encrypted password vault
 pavucontrol // GUI pulseaudio control panel

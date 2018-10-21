@@ -16,7 +16,7 @@ cd ..
 rm -rf yay
 
 yay -S --noconfirm $(cat $DOTDIR/packages/pacman_pkglist.txt | cut -f1 -d' ')
-yay -S $($DOTDIR/packages/aur_pkglist.txt | cut -f1 -d' ')
+yay -S $(cat $DOTDIR/packages/aur_pkglist.txt | cut -f1 -d' ')
 
 for dir in $(ls -d $DOTDIR/config/*/); do
   source $dir/install.sh $dir

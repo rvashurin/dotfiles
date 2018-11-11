@@ -1,17 +1,21 @@
 acpid
 alsa-utils
 anki
+ansible
 bbswitch
 bdf-unifont
 bluez-utils // bluetooth stuff
 bumblebee // integrated+dedicated graphics switcher
 calibre // Ebook library and reader
+chromium
 cronie // cron implementation
 dmenu
 docker-compose
 feh
 firefox
+flashplugin
 git
+gperf
 grub
 htop
 i3-gaps
@@ -33,9 +37,11 @@ openbsd-netcat // TCPIP swiss army knife
 openconnect // VPN client
 openssh
 p7zip
+pacman-contrib // updpkgsums
 pamixer // Command-line pulseaudio control
 pass // GPG-encrypted password vault
 pavucontrol // GUI pulseaudio control panel
+pepper-flash
 pulseaudio
 pulseaudio-bluetooth  // bluetooth integration for pulse
 qutebrowser
@@ -48,6 +54,7 @@ ttf-arphic-uming
 ttf-baekmuk
 ttf-dejavu
 ttf-freefont
+unrar
 unzip
 vlc
 wget

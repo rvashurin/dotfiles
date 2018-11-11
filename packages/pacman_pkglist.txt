@@ -44,7 +44,6 @@ pulseaudio-bluetooth  // bluetooth integration for pulse
 qutebrowser
 ranger // file manager
 sddm // Display manager
-shutter
 slim // Login manager
 slim-themes
 tmux

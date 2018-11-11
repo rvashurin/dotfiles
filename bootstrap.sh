@@ -21,3 +21,8 @@ yay -S $(cat $DOTDIR/packages/aur_pkglist.txt | cut -f1 -d' ')
 for dir in $(ls -d $DOTDIR/config/*/); do
   source $dir/install.sh $dir
 done
+
+mkdir -p /etc/pacman.d/hooks/
+sudo ln -s $DOTDIR/packages/sync_pkgdb.hook /etc/pacman.d/hooks/sync_pkgdb.hook
+sudo chmod ag+x $DOTDIR/packages/sync_pkgdb.sh
+sudo ln -s $DOTDIR/packages/sync_pkgdb.sh /usr/local/bin/sync_pkgdb.sh

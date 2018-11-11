@@ -12,13 +12,13 @@ echo $MISSING_FOREIGN
 
 echo ""
 echo "Syncing packages db..."
-for $PACKAGE in $MISSING_NATIVE 
+for PACKAGE in $MISSING_NATIVE 
 do
-  `$PACKAGE\n` >> $BASE_DIR/pacman_pkglist.txt
+  "$PACKAGE\n" >> $BASE_DIR/pacman_pkglist.txt
 done
-for $PACKAGE in $MISSING_FOREIGN
+for PACKAGE in $MISSING_FOREIGN
 do
-  `$PACKAGE\n` >> $BASE_DIR/aur_pkglist.txt
+  "$PACKAGE\n" >> $BASE_DIR/aur_pkglist.txt
 done
 sort -u -o $BASE_DIR/pacman_pkglist.txt $BASE_DIR/pacman_pkglist.txt
 sort -u -o $BASE_DIR/aur_pkglist.txt $BASE_DIR/aur_pkglist.txt

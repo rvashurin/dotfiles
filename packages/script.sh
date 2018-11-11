@@ -12,8 +12,8 @@ echo $MISSING_FOREIGN
 
 echo ""
 echo "Syncing packages db..."
-cat $/BASE_DIR/pacman_pkglist.txt <($MISSING_NATIVE) | sort -i -o $BASE_DIR/pacman_pkglist.txt
-cat $/BASE_DIR/aur_pkglist.txt <($MISSING_FOREIGN) | sort -i -o $BASE_DIR/aur_pkglist.txt
+cat $BASE_DIR/pacman_pkglist.txt <($MISSING_NATIVE) | sort -i -o $BASE_DIR/pacman_pkglist.txt
+cat $BASE_DIR/aur_pkglist.txt <($MISSING_FOREIGN) | sort -i -o $BASE_DIR/aur_pkglist.txt
 echo "OK"
 
 echo ""

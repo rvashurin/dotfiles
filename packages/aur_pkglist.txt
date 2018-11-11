@@ -18,4 +18,3 @@ ttf-unifont
 webtorrent-desktop-bin
 woeusb-git
 xinit-xsession
-ynab4

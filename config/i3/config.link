@@ -177,3 +177,4 @@ exec getmail
 exec st -n mutt -e zsh -c 'mutt;zsh'
 exec telegram-desktop
 exec dropbox
+exec redshift -l 55.753215:37.622504

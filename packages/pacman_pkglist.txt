@@ -11,6 +11,7 @@ dmenu
 docker-compose
 feh
 firefox
+flashplugin
 git
 grub
 htop
@@ -37,11 +38,13 @@ pacman-contrib // updpkgsums
 pamixer // Command-line pulseaudio control
 pass // GPG-encrypted password vault
 pavucontrol // GUI pulseaudio control panel
+pepper-flash
 pulseaudio
 pulseaudio-bluetooth  // bluetooth integration for pulse
 qutebrowser
 ranger // file manager
 sddm // Display manager
+shutter
 slim // Login manager
 slim-themes
 tmux
@@ -49,6 +52,7 @@ ttf-arphic-uming
 ttf-baekmuk
 ttf-dejavu
 ttf-freefont
+unrar
 unzip
 vlc
 wget

@@ -1,3 +1,4 @@
+dropbox
 ncpamixer
 nerd-fonts-complete-mono-glyphs
 oh-my-zsh-git
@@ -6,9 +7,9 @@ python-epub
 openvpn-update-systemd-resolved
 otf-font-awesome-4
 polybar
+redshift-minimal
 siji-git
 spotify
-telegram-desktop-bin
 ttf-font-awesome-4
 ttf-unifont
 webtorrent-desktop-bin

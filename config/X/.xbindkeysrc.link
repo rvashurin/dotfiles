@@ -80,6 +80,10 @@
 # Lock session
 "i3lock -i $HOME/.wallpaper.png"
   XF86ScreenSaver
+
+# Take a screenshot of area and save to clip
+"escrotum -sC"
+  Print
 ##################################
 # End of xbindkeys configuration #
 ##################################

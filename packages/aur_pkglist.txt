@@ -1,4 +1,5 @@
 dropbox
+escrotum-git
 heroku-toolbelt
 ncpamixer
 nerd-fonts-complete-mono-glyphs

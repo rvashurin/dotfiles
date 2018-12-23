@@ -1,5 +1,7 @@
+datagrip
 dropbox
 escrotum-git
+google-earth-pro
 heroku-toolbelt
 ncpamixer
 nerd-fonts-complete-mono-glyphs
@@ -7,6 +9,7 @@ oh-my-zsh-git
 openvpn-update-systemd-resolved
 otf-font-awesome-4
 polybar
+powder-toy
 python2-epub
 python-epub
 redshift-minimal
@@ -16,6 +19,8 @@ spotify
 tor-browser
 ttf-font-awesome-4
 ttf-unifont
+vpnfailsafe-git
 webtorrent-desktop-bin
 woeusb-git
 xinit-xsession
+ynab4

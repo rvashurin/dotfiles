@@ -19,6 +19,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'bling/vim-bufferline'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-syntastic/syntastic'
+Plug 'slim-template/vim-slim'
 
 " Initialize plugin system
 call plug#end()
@@ -29,11 +30,10 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set splitright
-set colorcolumn=80
+set colorcolumn=100
+set nu
 
 silent! colorscheme gruvbox
-
-set colorcolumn=100
 
 " ======================================
 " CtrlP

@@ -41,6 +41,8 @@ done
 export EDITOR=nvim
 alias ll="ls -alF"
 alias iconn="sudo openconnect ra.interfax.ru -g INTERFAX -u vashurin"
+alias nyvpn="sudo systemctl start openvpn-client@us_new_york_city.service"
+alias novpn="sudo systemctl stop openvpn-client@us_new_york_city.service"
 alias vim=nvim
 alias mutt=neomutt
 

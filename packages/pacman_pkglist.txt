@@ -22,8 +22,10 @@ i3-gaps
 i3lock
 intel-ucode // microcode updates, whatever that is
 iputils // ping
+ld-lsb
 libreoffice-fresh
 logrotate
+lua52
 man-pages
 mesa-demos // glxgears, fire, stuff to check if graphics card is working
 mlocate // locate
@@ -36,6 +38,7 @@ ntp // Network time protocol
 openbsd-netcat // TCPIP swiss army knife
 openconnect // VPN client
 openssh
+openvpn
 p7zip
 pacman-contrib // updpkgsums
 pamixer // Command-line pulseaudio control
@@ -46,6 +49,7 @@ pulseaudio
 pulseaudio-bluetooth  // bluetooth integration for pulse
 qutebrowser
 ranger // file manager
+scons
 sddm // Display manager
 slim // Login manager
 slim-themes
@@ -116,6 +120,7 @@ xorg-xvinfo
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
+yarn
 zip
 zsh
 zsh-theme-powerlevel9k

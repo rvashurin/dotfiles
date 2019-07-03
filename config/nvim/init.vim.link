@@ -20,6 +20,8 @@ Plug 'bling/vim-bufferline'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-syntastic/syntastic'
 Plug 'slim-template/vim-slim'
+Plug 'elixir-editors/vim-elixir'
+Plug 'dart-lang/dart-vim-plugin'
 
 " Initialize plugin system
 call plug#end()
@@ -71,6 +73,8 @@ let g:syntastic_check_on_wq = 0
 " =======================================
 nnoremap <Leader>f :NERDTreeToggle<Enter>
 nnoremap <silent> <Leader>v :NERDTreeFind<CR>
+nnoremap <Leader>] :! ctags -R .<Enter>
+nnoremap <leader>. :CtrlPTag<cr>
 
 " This allows buffers to be hidden if you've modified a buffer.
 " This is almost a must if you wish to use buffers in this way.

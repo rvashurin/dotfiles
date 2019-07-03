@@ -124,12 +124,8 @@ bindsym $mod+Shift+0 move container to workspace 10
 # Assign default apps to workspaces
 assign [class="chromium"] 1
 assign [class="st" instance="term"] 2
-assign [class="st" instance="vim"] 3
-assign [class="Spotify"] 7
-assign [class="Mysql-workbench-bin"] 4
-assign [class="st" instance="midnight"] 5
-assign [class="st" instance="mutt"] 6
-assign [class="TelegramDesktop"] 6
+assign [class="Spotify"] 10
+assign [class="Mysql-workbench-bin"] 9
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -164,17 +160,15 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+
 # Populate workspaces after creation
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec davmail
-exec optirun chromium
-exec st -n term
-exec st -n vim -e zsh -c 'nvim;zsh'
+exec chromium
+exec st -n term -e tmux 
 exec spotify 
 exec mysql-workbench
-exec st -n midnight -e zsh -c 'mc -b;zsh'
-exec getmail
-exec st -n mutt -e zsh -c 'mutt;zsh'
-exec telegram-desktop
 exec dropbox
 exec redshift -l 55.753215:37.622504
+
+for_window [class="Spotify"] move container to workspace 10
+

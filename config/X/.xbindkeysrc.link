@@ -77,6 +77,14 @@
 "pamixer --toggle-mute"
   XF86AudioMute
 
+# Increasse brightness
+"xbacklight -inc 10"
+XF86MonBrightnessUp
+
+# Decrease brightness
+"xbacklight -dec 10"
+XF86MonBrightnessDown
+
 # Lock session
 "i3lock -i $HOME/.wallpaper.png"
   XF86ScreenSaver

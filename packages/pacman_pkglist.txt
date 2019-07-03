@@ -1,7 +1,9 @@
 acpid
 alsa-utils
+android-tools
 anki
 ansible
+asar
 bbswitch
 bdf-unifont
 bluez-utils // bluetooth stuff
@@ -9,15 +11,20 @@ bumblebee // integrated+dedicated graphics switcher
 calibre // Ebook library and reader
 chromium
 cronie // cron implementation
+ctags
 dmenu
 docker-compose
+elixir
 feh
 firefox
 flashplugin
+gimp
 git
+gparted
 gperf
 grub
 htop
+hub
 i3-gaps
 i3lock
 intel-ucode // microcode updates, whatever that is
@@ -47,6 +54,10 @@ pavucontrol // GUI pulseaudio control panel
 pepper-flash
 pulseaudio
 pulseaudio-bluetooth  // bluetooth integration for pulse
+python-dateutil
+python-keyring
+python-pycryptodome
+python-tzlocal
 qutebrowser
 ranger // file manager
 scons
@@ -61,6 +72,7 @@ ttf-freefont
 unrar
 unzip
 vlc
+weechat
 wget
 wireless_tools
 wpa_actiond

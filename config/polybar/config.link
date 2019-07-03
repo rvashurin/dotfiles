@@ -20,7 +20,7 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/top]
-;monitor = ${env:MONITOR:HDMI-1}
+monitor = eDP1
 width = 100%
 height = 35
 ;offset-x = 1%
@@ -67,7 +67,7 @@ modules-right = volume wlan xkeyboard date
 ;scroll-down = i3wm-wsprev
 
 [bar/bottom]
-;monitor = ${env:MONITOR:HDMI-1}
+monitor = eDP1
 width = 100%
 height = 31
 ;offset-x = 1%
@@ -96,7 +96,7 @@ font-1 = Unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = "Wuncon Siji:pixelsize=10;1"
 font-3 = "FontAwesome:pixelsize=11;0"
 
-modules-left = bspwm i3
+modules-left = i3
 modules-center = 
 modules-right = battery cpu memory temperature filesystem
 
@@ -116,6 +116,102 @@ tray-padding = 2
 ;scroll-up = i3wm-wsnext
 ;scroll-down = i3wm-wsprev
 
+[bar/top_external]
+monitor = HDMI-1-1
+width = 100%
+height = 35
+;offset-x = 1%
+;offset-y = 1%
+radius = 0.0
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+border-size = 0
+border-color = #00000000
+
+padding-left = 0
+padding-right = 0 
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = fixed:pixelsize=10;1
+font-1 = Unifont:fontformat=truetype:size=8:antialias=false;0
+font-2 = "Wuncon Siji:pixelsize=10;1"
+font-3 = "FontAwesome:pixelsize=11;0"
+
+modules-left =  powermenu
+modules-center = mpd
+modules-right = volume wlan xkeyboard date
+
+;tray-transparent = true
+;tray-background = #0063ff
+
+;wm-restack = bspwm
+;wm-restack = i3
+
+;override-redirect = true
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+[bar/bottom_external]
+monitor = HDMI-1-1
+width = 100%
+height = 31
+;offset-x = 1%
+;offset-y = 1%
+radius = 0.0
+fixed-center = false
+bottom = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+border-top-size = 4 
+border-color = #3F3F3F
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 0
+module-margin-right = 2
+
+font-0 = fixed:pixelsize=10;1
+font-1 = Unifont:fontformat=truetype:size=8:antialias=false;0
+font-2 = "Wuncon Siji:pixelsize=10;1"
+font-3 = "FontAwesome:pixelsize=11;0"
+
+modules-left = i3
+modules-center = 
+modules-right = battery cpu memory temperature filesystem
+
+tray-position = right
+tray-padding = 2
+;tray-transparent = true
+;tray-background = #0063ff
+
+;wm-restack = bspwm
+;wm-restack = i3
+
+;override-redirect = true
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
 
 [module/xwindow]
 type = internal/xwindow
@@ -175,10 +271,14 @@ pin-workspaces = true
 ws-icon-0 = "1;  Web"
 ws-icon-1 = "2; Term"
 ws-icon-2 = "3; Code"
-ws-icon-3 = "4; DB"
-ws-icon-4 = "5; Files"
-ws-icon-5 = "6; Social"
-ws-icon-6 = "7; Media"
+;ws-icon-3 = "4; DB"
+;ws-icon-4 = "5; Files"
+;ws-icon-5 = "6; Social"
+;ws-icon-6 = "7; Media"
+ws-icon-3 = "4;  4"
+ws-icon-4 = "5;  5"
+ws-icon-5 = "6;  6"
+ws-icon-6 = "7;  7"
 ws-icon-7 = "8;  8"
 ws-icon-8 = "9;  9"
 ws-icon-9 = "10;  10"
@@ -336,8 +436,8 @@ ramp-headphones-1 = 
 
 [module/battery]
 type = internal/battery
-battery = BAT0
-adapter = AC
+battery = BAT1
+adapter = ACAD
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>

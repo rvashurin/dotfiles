@@ -1,8 +1,10 @@
 datagrip
 dropbox
 escrotum-git
+flutter
 google-earth-pro
 heroku-toolbelt
+jrnl
 ncpamixer
 nerd-fonts-complete-mono-glyphs
 oh-my-zsh-git
@@ -18,9 +20,9 @@ silver-searcher-git
 spotify
 tor-browser
 ttf-font-awesome-4
-ttf-unifont
 vpnfailsafe-git
 webtorrent-desktop-bin
 woeusb-git
+wpa_actiond
 xinit-xsession
-ynab4
+zoom

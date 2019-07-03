@@ -32,7 +32,15 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
+# run the xrandr command if an external monitor is connected to the
+# laptop.  This must be executed before the polybar command, so that
+# polybar can set the two separate bars properly.
+$HOME/bin/dual_monitor_setup
+
 sh /home/mhi/.fehbg
-setxkbmap -model thinkpad60 -layout gb,ru -option grp:alt_shift_toggle -option ctrl:nocaps
+setxkbmap -model thinkpad60 -layout us,ru -option grp:alt_shift_toggle -option ctrl:nocaps
 xbindkeys
 i3
+
+i3-msg "workspace 1, move workspace to output HDMI-1-1"
+i3-msg "workspace 2, move workspace to output HDMI-1-1"

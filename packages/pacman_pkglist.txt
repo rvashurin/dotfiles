@@ -18,6 +18,7 @@ elixir
 feh
 firefox
 flashplugin
+fzf
 gimp
 git
 gparted

@@ -14,7 +14,6 @@ noremap   <Right>  <NOP>
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'morhetz/gruvbox'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'bling/vim-bufferline'
 Plug 'scrooloose/nerdtree'
@@ -22,6 +21,7 @@ Plug 'vim-syntastic/syntastic'
 Plug 'slim-template/vim-slim'
 Plug 'elixir-editors/vim-elixir'
 Plug 'dart-lang/dart-vim-plugin'
+Plug 'junegunn/fzf.vim'
 
 " Initialize plugin system
 call plug#end()
@@ -36,12 +36,6 @@ set colorcolumn=100
 set nu
 
 silent! colorscheme gruvbox
-
-" ======================================
-" CtrlP
-" ======================================
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
 
 " ======================================
 " NERDTree
@@ -74,7 +68,7 @@ let g:syntastic_check_on_wq = 0
 nnoremap <Leader>f :NERDTreeToggle<Enter>
 nnoremap <silent> <Leader>v :NERDTreeFind<CR>
 nnoremap <Leader>] :! ctags -R .<Enter>
-nnoremap <leader>. :CtrlPTag<cr>
+nnoremap <c-p> :Files .<CR>  
 
 " This allows buffers to be hidden if you've modified a buffer.
 " This is almost a must if you wish to use buffers in this way.

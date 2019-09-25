@@ -10,7 +10,7 @@ while pgrep -x polybar >/dev/null; do sleep 1; done
 polybar top &  
 polybar bottom &
 
-my_laptop_external_monitor=$(xrandr --query | grep 'HDMI-1-1')
+my_laptop_external_monitor=$(xrandr --query | grep 'HDMI-0')
 if [[ $my_laptop_external_monitor = *connected* ]]; then
     polybar top_external &
     polybar bottom_external &

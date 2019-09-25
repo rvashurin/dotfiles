@@ -165,8 +165,6 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec chromium
 exec st -n term -e tmux 
-exec spotify 
-exec mysql-workbench
 exec dropbox
 exec redshift -l 55.753215:37.622504
 

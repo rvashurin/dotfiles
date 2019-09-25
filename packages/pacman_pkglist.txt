@@ -31,17 +31,25 @@ i3lock
 intel-ucode // microcode updates, whatever that is
 iputils // ping
 ld-lsb
+lib32-gtk2
+lib32-libxslt
+lib32-nss
 libreoffice-fresh
+liferea
 logrotate
 lua52
+lutris
 man-pages
 mesa-demos // glxgears, fire, stuff to check if graphics card is working
 mlocate // locate
 mysql-workbench
 ncmpcpp // music player
+neofetch
 neovim
 netctl
+nginx
 nodejs
+noto-fonts-emoji
 ntp // Network time protocol
 openbsd-netcat // TCPIP swiss army knife
 openconnect // VPN client
@@ -56,15 +64,19 @@ pepper-flash
 pulseaudio
 pulseaudio-bluetooth  // bluetooth integration for pulse
 python-dateutil
+python-feedparser
 python-keyring
 python-pycryptodome
 python-tzlocal
 qutebrowser
 ranger // file manager
+redis
 scons
 sddm // Display manager
 slim // Login manager
 slim-themes
+telegram-desktop
+tig
 tmux
 ttf-arphic-uming
 ttf-baekmuk

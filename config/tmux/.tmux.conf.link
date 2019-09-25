@@ -1,2 +1,3 @@
 set -s escape-time 10 
 set -as terminal-overrides ',st*:Ss@'
+set-option -g prefix C-a

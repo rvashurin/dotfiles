@@ -22,6 +22,7 @@ Plug 'slim-template/vim-slim'
 Plug 'elixir-editors/vim-elixir'
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'junegunn/fzf.vim'
+Plug 'ngmy/vim-rubocop'
 
 " Initialize plugin system
 call plug#end()
@@ -32,7 +33,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set splitright
-set colorcolumn=100
+set colorcolumn=80
 set nu
 
 silent! colorscheme gruvbox
@@ -69,6 +70,7 @@ nnoremap <Leader>f :NERDTreeToggle<Enter>
 nnoremap <silent> <Leader>v :NERDTreeFind<CR>
 nnoremap <Leader>] :! ctags -R .<Enter>
 nnoremap <c-p> :Files .<CR>  
+nmap     <Leader>r :RuboCop<CR>
 
 " This allows buffers to be hidden if you've modified a buffer.
 " This is almost a must if you wish to use buffers in this way.

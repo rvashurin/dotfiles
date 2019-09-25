@@ -20,7 +20,7 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/top]
-monitor = eDP1
+monitor = eDP-1-1
 width = 100%
 height = 35
 ;offset-x = 1%
@@ -48,8 +48,9 @@ font-1 = Unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = "Wuncon Siji:pixelsize=10;1"
 font-3 = "FontAwesome:pixelsize=11;0"
 
+enable-ipc = true
+
 modules-left =  powermenu
-modules-center = mpd
 modules-right = volume wlan xkeyboard date
 
 ;tray-transparent = true
@@ -67,7 +68,7 @@ modules-right = volume wlan xkeyboard date
 ;scroll-down = i3wm-wsprev
 
 [bar/bottom]
-monitor = eDP1
+monitor = eDP-1-1
 width = 100%
 height = 31
 ;offset-x = 1%
@@ -95,6 +96,8 @@ font-0 = fixed:pixelsize=10;1
 font-1 = Unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = "Wuncon Siji:pixelsize=10;1"
 font-3 = "FontAwesome:pixelsize=11;0"
+
+enable-ipc = true
 
 modules-left = i3
 modules-center = 
@@ -117,7 +120,7 @@ tray-padding = 2
 ;scroll-down = i3wm-wsprev
 
 [bar/top_external]
-monitor = HDMI-1-1
+monitor = HDMI-0
 width = 100%
 height = 35
 ;offset-x = 1%
@@ -145,8 +148,10 @@ font-1 = Unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = "Wuncon Siji:pixelsize=10;1"
 font-3 = "FontAwesome:pixelsize=11;0"
 
+enable-ipc = true
+
 modules-left =  powermenu
-modules-center = mpd
+modules-center = pomobar
 modules-right = volume wlan xkeyboard date
 
 ;tray-transparent = true
@@ -164,7 +169,7 @@ modules-right = volume wlan xkeyboard date
 ;scroll-down = i3wm-wsprev
 
 [bar/bottom_external]
-monitor = HDMI-1-1
+monitor = HDMI-0
 width = 100%
 height = 31
 ;offset-x = 1%
@@ -192,6 +197,8 @@ font-0 = fixed:pixelsize=10;1
 font-1 = Unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = "Wuncon Siji:pixelsize=10;1"
 font-3 = "FontAwesome:pixelsize=11;0"
+
+enable-ipc = true
 
 modules-left = i3
 modules-center = 
@@ -363,7 +370,7 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = wlp3s0 
+interface = wlp0s20f3
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
@@ -411,7 +418,7 @@ time-alt = %H:%M:%S
 label =  %date%    %time%
 
 [module/volume]
-type = internal/volume
+type = internal/alsa
 
 format-volume = <ramp-volume> <label-volume>
 # label-volume = VOL
@@ -466,8 +473,8 @@ warn-temperature = 60
 format = <ramp> <label>
 format-warn = <ramp> <label-warn>
 
-label = %temperature%
-label-warn = %temperature%
+label = %temperature-c%
+label-warn = %temperature-c%
 label-warn-foreground = ${colors.secondary}
 
 ramp-0 = 
@@ -503,6 +510,14 @@ menu-2-0 = power off
 menu-2-0-exec = poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
+
+[module/pomobar]
+type=custom/ipc
+hook-0 = cat ~/.pomobaroutput
+initial=1
+click-left = ~/workspace/dotfiles/config/polybar/pomobar.py --action=new &
+click-middle= ~/workspace/dotfiles/config/polybar/pomobar.py --action=kill &
+click-right = ~/workspace/dotfiles/config/polybar/pomobar.py --action=break &
 
 [settings]
 screenchange-reload = true

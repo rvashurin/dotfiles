@@ -1,3 +1,7 @@
+adobe-air
+adobe-air-sdk
+canto-curses
+canto-daemon
 datagrip
 dropbox
 escrotum-git
@@ -5,11 +9,15 @@ flutter
 google-earth-pro
 heroku-toolbelt
 jrnl
+lutris-world-of-warcraft-dependencies-amd
+lutris-world-of-warcraft-dependencies-nvidia
 ncpamixer
 nerd-fonts-complete-mono-glyphs
+ngrok
 oh-my-zsh-git
 openvpn-update-systemd-resolved
 otf-font-awesome-4
+peertube
 polybar
 powder-toy
 python2-epub

@@ -1,0 +1,6 @@
+#!/bin/zsh
+
+sum=$2
+
+[[ $sum =~ ".*Pomodoro finished.*" ]] && paplay ~/.config/dunst/rest_now.ogg
+[[ $sum =~ ".*Break finished.*" ]] && paplay ~/.config/dunst/work_now.ogg

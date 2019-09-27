@@ -61,12 +61,14 @@ pamixer // Command-line pulseaudio control
 pass // GPG-encrypted password vault
 pavucontrol // GUI pulseaudio control panel
 pepper-flash
+pritunl-client-electron
 pulseaudio
 pulseaudio-bluetooth  // bluetooth integration for pulse
 python-dateutil
 python-feedparser
 python-keyring
 python-pycryptodome
+python-sphinx
 python-tzlocal
 qutebrowser
 ranger // file manager

@@ -51,6 +51,7 @@ font-3 = "FontAwesome:pixelsize=11;0"
 enable-ipc = true
 
 modules-left =  powermenu
+modules-center = pomobar
 modules-right = volume wlan xkeyboard date
 
 ;tray-transparent = true

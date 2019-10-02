@@ -17,6 +17,7 @@ ngrok
 oh-my-zsh-git
 openvpn-update-systemd-resolved
 otf-font-awesome-4
+pass-import
 peertube
 polybar
 powder-toy
@@ -28,6 +29,7 @@ silver-searcher-git
 spotify
 tor-browser
 ttf-font-awesome-4
+ttf-unifont
 vpnfailsafe-git
 webtorrent-desktop-bin
 woeusb-git

@@ -67,6 +67,7 @@ pulseaudio-bluetooth  // bluetooth integration for pulse
 python-dateutil
 python-feedparser
 python-keyring
+python-pyaml
 python-pycryptodome
 python-sphinx
 python-tzlocal

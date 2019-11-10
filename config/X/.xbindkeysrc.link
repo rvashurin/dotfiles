@@ -39,7 +39,7 @@
 
 # Examples of commands:
 
-"xbindkeys_show" 
+"xbindkeys_show"
   control+shift + q
 
 # set directly keycode (here control + f with my keyboard)
@@ -78,11 +78,11 @@
   XF86AudioMute
 
 # Increasse brightness
-"xbacklight -inc 10"
+"light -A 10"
 XF86MonBrightnessUp
 
 # Decrease brightness
-"xbacklight -dec 10"
+"light -D 10"
 XF86MonBrightnessDown
 
 # Lock session

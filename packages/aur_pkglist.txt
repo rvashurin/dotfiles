@@ -9,11 +9,13 @@ flutter
 google-earth-pro
 heroku-toolbelt
 jrnl
+k2pdfopt
 lutris-world-of-warcraft-dependencies-amd
 lutris-world-of-warcraft-dependencies-nvidia
 ncpamixer
 nerd-fonts-complete-mono-glyphs
 ngrok
+nodejs-coffeelint
 oh-my-zsh-git
 openvpn-update-systemd-resolved
 otf-font-awesome-4
@@ -23,6 +25,7 @@ polybar
 powder-toy
 python2-epub
 python-epub
+q
 redshift-minimal
 siji-git
 silver-searcher-git

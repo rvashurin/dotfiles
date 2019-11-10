@@ -9,6 +9,7 @@ bdf-unifont
 bluez-utils // bluetooth stuff
 bumblebee // integrated+dedicated graphics switcher
 calibre // Ebook library and reader
+ccid
 chromium
 cronie // cron implementation
 ctags
@@ -31,17 +32,22 @@ i3lock
 intel-ucode // microcode updates, whatever that is
 iputils // ping
 ld-lsb
+leptonica
 lib32-gtk2
 lib32-libxslt
 lib32-nss
+libcurl-gnutls
 libreoffice-fresh
+licenses
 liferea
+light
 logrotate
 lua52
 lutris
 man-pages
 mesa-demos // glxgears, fire, stuff to check if graphics card is working
 mlocate // locate
+mupdf
 mysql-workbench
 ncmpcpp // music player
 neofetch
@@ -67,6 +73,7 @@ pulseaudio-bluetooth  // bluetooth integration for pulse
 python-dateutil
 python-feedparser
 python-keyring
+python-numpy
 python-pyaml
 python-pycryptodome
 python-sphinx
@@ -74,13 +81,16 @@ python-tzlocal
 qutebrowser
 ranger // file manager
 redis
+rtmpdump
 scons
 sddm // Display manager
 slim // Login manager
 slim-themes
 telegram-desktop
+thunar
 tig
 tmux
+transmission-qt
 ttf-arphic-uming
 ttf-baekmuk
 ttf-dejavu

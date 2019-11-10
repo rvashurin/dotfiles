@@ -58,7 +58,7 @@ class Pomodoro:
 class Break:
     """Break time class"""
 
-    def __init__(self, duration=600):
+    def __init__(self, duration=300):
         super().__init__()
         self.duration = int(duration)
         self.ICON = " "
@@ -108,9 +108,7 @@ class GlobalPomodoroCounter:
             connection = sqlite3.connect(DATABASE_PATH)
             cursor = connection.cursor()
             cursor.execute(
-                "UPDATE POMODOROS SET COMPLETADOS = ("
-                "" + pomodoros_actualizados + ""
-                ") WHERE COMPLETADOS = '" + pomodoros_completados + "'"
+                "UPDATE POMODOROS SET COMPLETADOS = (" + pomodoros_actualizados + ")"
             )
             connection.commit()
             connection.close()
@@ -125,7 +123,9 @@ class GlobalPomodoroCounter:
             connection = sqlite3.connect(DATABASE_PATH)
             cursor = connection.cursor()
             cursor.execute("SELECT COMPLETADOS FROM POMODOROS")
-            pomodoros_completados = cursor.fetchone()[0]
+            done = cursor.fetchone()[0]
+            if int(done) < 5:
+                pomodoros_completados = done
             connection.close()
         except Exception as e:
             print(e)

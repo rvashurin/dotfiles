@@ -1,0 +1,3 @@
+import os
+
+os.system("paplay 117280__alexsani__front-tick.wav")

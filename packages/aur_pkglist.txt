@@ -1,5 +1,6 @@
 adobe-air
 adobe-air-sdk
+anaconda
 canto-curses
 canto-daemon
 datagrip
@@ -27,9 +28,12 @@ python2-epub
 python-epub
 q
 redshift-minimal
+ruby-erubis
+ruby-xdg
 siji-git
 silver-searcher-git
 spotify
+tmuxinator
 tor-browser
 ttf-font-awesome-4
 ttf-unifont
@@ -38,4 +42,5 @@ webtorrent-desktop-bin
 woeusb-git
 wpa_actiond
 xinit-xsession
+xorg-server-xdmx
 zoom

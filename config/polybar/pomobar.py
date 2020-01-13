@@ -43,9 +43,10 @@ class Pomodoro:
 
     def start(self):
         while self.duration >= 0:
+            os.system("paplay /home/mhi/workspace/dotfiles/config/polybar/117280__alexsani__front-tick.wav --volume 30000")
             writeOutput(self.ICON + str(self.duration))
             recharge_polybar()
-            time.sleep(1)
+            time.sleep(0.5)
             self.duration -= 1
 
         if self.duration <= 0:

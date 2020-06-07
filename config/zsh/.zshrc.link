@@ -45,6 +45,7 @@ alias revpn="sudo systemctl restart openvpn-client@us_new_york_city.service"
 alias novpn="sudo systemctl stop openvpn-client@us_new_york_city.service"
 alias rubocheck="gst -s | grep -E '^(( [MC])|(\?\?))' | awk '{$1=$1};1' |  cut -f2 -d' ' | xargs rubocop -a"
 alias cleanlock="git checkout HEAD -- Gemfile.lock"
+alias lf_ssh='eval "$(ssh-agent)" && ssh-add && ssh -A roman@ops.leadfeeder.net'
 alias vim=nvim
 alias mutt=neomutt
 alias reload_songlist="rm -rf $HOME/.cache/spotify"

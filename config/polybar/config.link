@@ -38,14 +38,14 @@ border-size = 0
 border-color = #00000000
 
 padding-left = 0
-padding-right = 0 
+padding-right = 0
 
 module-margin-left = 1
 module-margin-right = 2
 
 font-0 = fixed:pixelsize=10;1
 font-1 = Unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = "Wuncon Siji:pixelsize=10;1"
+font-2 = "siji:pixelsize=10;1"
 font-3 = "FontAwesome:pixelsize=11;0"
 
 enable-ipc = true
@@ -84,7 +84,7 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-border-top-size = 4 
+border-top-size = 4
 border-color = #3F3F3F
 
 padding-left = 0
@@ -95,13 +95,13 @@ module-margin-right = 2
 
 font-0 = fixed:pixelsize=10;1
 font-1 = Unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = "Wuncon Siji:pixelsize=10;1"
+font-2 = "siji:pixelsize=10;1"
 font-3 = "FontAwesome:pixelsize=11;0"
 
 enable-ipc = true
 
 modules-left = i3
-modules-center = 
+modules-center = pomobar
 modules-right = battery cpu memory temperature filesystem
 
 tray-position = right
@@ -139,14 +139,14 @@ border-size = 0
 border-color = #00000000
 
 padding-left = 0
-padding-right = 0 
+padding-right = 0
 
 module-margin-left = 1
 module-margin-right = 2
 
 font-0 = fixed:pixelsize=10;1
 font-1 = Unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = "Wuncon Siji:pixelsize=10;1"
+font-2 = "siji:pixelsize=10;1"
 font-3 = "FontAwesome:pixelsize=11;0"
 
 enable-ipc = true
@@ -185,7 +185,7 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-border-top-size = 4 
+border-top-size = 4
 border-color = #3F3F3F
 
 padding-left = 0
@@ -196,13 +196,13 @@ module-margin-right = 2
 
 font-0 = fixed:pixelsize=10;1
 font-1 = Unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = "Wuncon Siji:pixelsize=10;1"
+font-2 = "siji:pixelsize=10;1"
 font-3 = "FontAwesome:pixelsize=11;0"
 
 enable-ipc = true
 
 modules-left = i3
-modules-center = 
+modules-center =
 modules-right = battery cpu memory temperature filesystem
 
 tray-position = right
@@ -391,7 +391,7 @@ ramp-signal-foreground = ${colors.foreground}
 
 [module/eth]
 type = internal/network
-interface = 
+interface =
 interval = 3.0
 
 format-connected-underline = #55aa55
@@ -412,7 +412,7 @@ format-background = #000
 format-padding = 3
 
 date = " %A, %b %d"
-date-alt = 
+date-alt =
 time = %H:%M
 time-alt = %H:%M:%S
 
@@ -490,7 +490,7 @@ format-spacing = 1
 format-background = #000
 format-padding = 3
 
-label-open =  
+label-open = 
 label-open-foreground = ${colors.foreground}
 label-close =  cancel
 label-close-foreground = ${colors.foreground}

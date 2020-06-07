@@ -37,7 +37,7 @@ if config.has_option('PATH', 'DATABASE_PATH'):
 class Pomodoro:
     """Normal pomodoro"""
 
-    def __init__(self, duration=1800):
+    def __init__(self, duration=1500):
         self.duration = int(duration)
         self.ICON = " "
 

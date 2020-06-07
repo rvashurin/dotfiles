@@ -6,6 +6,7 @@ ansible
 asar
 bbswitch
 bdf-unifont
+bluez-hid2hci
 bluez-utils // bluetooth stuff
 bumblebee // integrated+dedicated graphics switcher
 calibre // Ebook library and reader
@@ -16,6 +17,7 @@ ctags
 dart
 discord
 dmenu
+dmidecode
 docker
 docker-compose
 electron
@@ -31,6 +33,7 @@ gobject-introspection
 gparted
 gperf
 grub
+hdf5
 htop
 hub
 i3-gaps
@@ -78,6 +81,7 @@ pepper-flash
 pritunl-client-electron
 pulseaudio
 pulseaudio-bluetooth  // bluetooth integration for pulse
+pymol
 python-dateutil
 python-feedparser
 python-keyring
@@ -86,9 +90,13 @@ python-pyaml
 python-pycryptodome
 python-sphinx
 python-tzlocal
+python-xcffib
+python-xdg
+qt5-quickcontrols
 qutebrowser
 ranger // file manager
 redis
+remmina
 rtmpdump
 ruby-rdoc
 ruby-thor
@@ -96,6 +104,7 @@ scons
 sddm // Display manager
 slim // Login manager
 slim-themes
+smem
 telegram-desktop
 thunar
 tig
@@ -110,6 +119,7 @@ unzip
 usbutils
 vi
 vlc
+vte-common
 weechat
 wget
 winetricks

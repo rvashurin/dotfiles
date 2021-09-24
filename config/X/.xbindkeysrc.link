@@ -91,7 +91,7 @@ XF86MonBrightnessDown
 
 # Take a screenshot of area and save to clip
 "escrotum -sC"
-  Print
+  Alt + Next
 ##################################
 # End of xbindkeys configuration #
 ##################################

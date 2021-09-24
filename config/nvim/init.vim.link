@@ -51,6 +51,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " Autoclose nerdtree when file is opened
 let NERDTreeQuitOnOpen = 1
+let NERDTreeIgnore = ['\.pyc$', '^__pycache__$']
 
 " =======================================
 " Syntastic
@@ -70,7 +71,7 @@ let g:syntastic_check_on_wq = 0
 nnoremap <Leader>f :NERDTreeToggle<Enter>
 nnoremap <silent> <Leader>v :NERDTreeFind<CR>
 nnoremap <Leader>] :! ctags -R .<Enter>
-nnoremap <c-p> :Files .<CR>  
+nnoremap <c-p> :Files .<CR>
 nmap     <Leader>r :RuboCop<CR>
 
 " This allows buffers to be hidden if you've modified a buffer.

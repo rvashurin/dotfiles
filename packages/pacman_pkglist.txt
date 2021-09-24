@@ -6,6 +6,7 @@ ansible
 asar
 bbswitch
 bdf-unifont
+blueman
 bluez-hid2hci
 bluez-utils // bluetooth stuff
 bumblebee // integrated+dedicated graphics switcher
@@ -14,6 +15,8 @@ ccid
 chromium
 cronie // cron implementation
 ctags
+cudnn
+cython2
 dart
 discord
 dmenu
@@ -38,23 +41,32 @@ htop
 hub
 i3-gaps
 i3lock
+ibus
+inetutils
 intel-ucode // microcode updates, whatever that is
 iputils // ping
+jbigkit
+jupyterlab
 ld-lsb
 leptonica
 lib32-gtk2
 lib32-libxslt
 lib32-nss
 libcurl-gnutls
+libicns
 libreoffice-fresh
 licenses
 liferea
 light
 logrotate
 lua52
+luit
 lutris
 man-pages
+mariadb-clients
+mc
 mesa-demos // glxgears, fire, stuff to check if graphics card is working
+meson
 mlocate // locate
 mupdf
 mysql-workbench
@@ -65,6 +77,7 @@ neovim
 netctl
 nginx
 nodejs
+nomacs
 noto-fonts-emoji
 ntp // Network time protocol
 nvidia
@@ -78,6 +91,8 @@ pamixer // Command-line pulseaudio control
 pass // GPG-encrypted password vault
 pavucontrol // GUI pulseaudio control panel
 pepper-flash
+pgadmin4
+pinta
 pritunl-client-electron
 pulseaudio
 pulseaudio-bluetooth  // bluetooth integration for pulse
@@ -92,11 +107,13 @@ python-sphinx
 python-tzlocal
 python-xcffib
 python-xdg
+qbittorrent
 qt5-quickcontrols
 qutebrowser
 ranger // file manager
 redis
 remmina
+rpmextract
 rtmpdump
 ruby-rdoc
 ruby-thor
@@ -179,6 +196,7 @@ xorg-xrefresh
 xorg-xset
 xorg-xsetroot
 xorg-xvinfo
+xorg-xwayland
 xorg-xwd
 xorg-xwininfo
 xorg-xwud

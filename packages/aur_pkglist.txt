@@ -4,6 +4,7 @@ anaconda
 canto-curses
 canto-daemon
 chemdoodle
+cnrdrvcups-lb
 cvector
 datagrip
 dropbox
@@ -17,6 +18,7 @@ jrnl
 k2pdfopt
 lutris-world-of-warcraft-dependencies-amd
 lutris-world-of-warcraft-dependencies-nvidia
+miniconda3
 ncpamixer
 neartree
 nerd-fonts-complete-mono-glyphs
@@ -27,6 +29,7 @@ openvpn-update-systemd-resolved
 otf-font-awesome-4
 pass-import
 peertube
+pepper-flash
 polybar
 powder-toy
 python2-epub
@@ -49,6 +52,7 @@ webtorrent-desktop-bin
 woeusb-git
 wpa_actiond
 xbindkeys
+xflux
 xinit-xsession
 xorg-server-xdmx
 zoom

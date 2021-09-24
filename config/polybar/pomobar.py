@@ -37,13 +37,12 @@ if config.has_option('PATH', 'DATABASE_PATH'):
 class Pomodoro:
     """Normal pomodoro"""
 
-    def __init__(self, duration=1500):
+    def __init__(self, duration=3000):
         self.duration = int(duration)
         self.ICON = " "
 
     def start(self):
         while self.duration >= 0:
-            os.system("paplay /home/mhi/workspace/dotfiles/config/polybar/117280__alexsani__front-tick.wav --volume 30000")
             writeOutput(self.ICON + str(self.duration))
             recharge_polybar()
             time.sleep(0.5)
@@ -59,7 +58,7 @@ class Pomodoro:
 class Break:
     """Break time class"""
 
-    def __init__(self, duration=300):
+    def __init__(self, duration=600):
         super().__init__()
         self.duration = int(duration)
         self.ICON = " "
